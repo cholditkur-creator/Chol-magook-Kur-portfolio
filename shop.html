@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore products from Drakmas Lyon Empire. Browse categories and order through WhatsApp. Delivery arrangements across South Sudan.">
+  <title>Shop | Drakmas Lyon Empire</title>
+  <style>
+    :root {
+      --ink: #171717;
+      --cream: #f7f2e8;
+      --gold: #c8a45d;
+      --muted: #6b675f;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 24px 18px;
+      text-align: center;
+      border-bottom: 3px solid var(--gold);
+    }
+    header h1 { margin: 0; font-size: 27px; }
+    header p { margin: 5px 0 0; color: #e4d5b5; }
+    main { max-width: 1000px; margin: auto; padding: 22px 16px; }
+    .hero { padding: 20px 0; }
+    .hero h2 { font-size: 32px; line-height: 1.2; margin-bottom: 8px; }
+    .hero p { color: var(--muted); }
+    .notice {
+      background: #fff;
+      border-left: 4px solid var(--gold);
+      padding: 12px 14px;
+      border-radius: 5px;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0;
+    }
+    .categories a {
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .product {
+      background: white;
+      border: 1px solid #e5dfd3;
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .product .symbol {
+      background: #eee6d7;
+      border-radius: 8px;
+      min-height: 105px;
+      display: grid;
+      place-items: center;
+      font-size: 38px;
+    }
+    .product h3 { margin-bottom: 4px; }
+    .product p { color: var(--muted); font-size: 14px; }
+    .price { font-weight: bold; font-size: 18px; }
+    .button {
+      display: block;
+      text-align: center;
+      background: #207b49;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      padding: 11px;
+      margin-top: 14px;
+      font-weight: bold;
+    }
+    .button:focus { outline: 3px solid var(--gold); }
+    footer {
+      text-align: center;
+      background: var(--ink);
+      color: white;
+      padding: 24px 16px;
+      margin-top: 30px;
+    }
+    footer p { margin: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Drakmas Lyon Empire</h1>
+    <p>LYON PROMOTION®️</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Discover. Choose. Order.</h2>
+      <p>Explore our product categories and contact us to confirm availability, prices and delivery across South Sudan.</p>
+      <div class="notice">
+        <strong>Welcome to our shop.</strong>
+        Prices are confirmed in USD when you enquire. Delivery fees and timing depend on your location.
+      </div>
+    </section>
+
+    <nav class="categories" aria-label="Product categories">
+      <a href="#fashion">Fashion</a>
+      <a href="#merchandise">Merchandise</a>
+      <a href="#technology">Technology</a>
+      <a href="#books">Books &amp; more</a>
+    </nav>
+
+    <section class="grid" aria-label="Product categories">
+      <article class="product" id="fashion">
+        <div class="symbol" aria-hidden="true">👕</div>
+        <h3>Clothing &amp; Fashion</h3>
+        <p>Explore available clothing and apparel. Ask us about sizes, colours and stock.</p>
+        <div class="price">Price on enquiry · USD</div>
+        <a class="button order" href="#contact" data-product="Clothing and fashion">Enquire to order</a>
+      </article>
+
+      <article class="product" id="merchandise">
+        <div class="symbol" aria-hidden="true">☕</div>
+        <h3>Branded Merchandise</h3>
+        <p>Ask about cups, bags, accessories and other branded items.</p>
+        <div class="price">Price on enquiry · USD</div>
+        <a class="button order" href="#contact" data-product="Branded merchandise">Enquire to order</a>
+      </article>
+
+      <article class="product" id="technology">
+        <div class="symbol" aria-hidden="true">📱</div>
+        <h3>Technology</h3>
+        <p>Contact us to enquire about available devices and technology products.</p>
+        <div class="price">Price on enquiry · USD</div>
+        <a class="button order" href="#contact" data-product="Technology products">Enquire to order</a>
+      </article>
+
+      <article class="product" id="books">
+        <div class="symbol" aria-hidden="true">📚</div>
+        <h3>Books &amp; Other Products</h3>
+        <p>Ask us about books, learning resources and other available products.</p>
+        <div class="price">Price on enquiry · USD</div>
+        <a class="button order" href="#contact" data-product="Books and other products">Enquire to order</a>
+      </article>
+    </section>
+
+    <section id="contact" class="hero">
+      <h2>Ready to order?</h2>
+      <p>Choose a category above and contact us to confirm the product, USD price, payment method and delivery arrangements.</p>
+      <div class="notice">
+        Our WhatsApp ordering number will be added here once it is provided. For now, please add your contact details before advertising this shop.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Drakmas Lyon Empire</strong></p>
+    <p>LYON PROMOTION®️</p>
+    <p>Serving customers across South Sudan, subject to delivery confirmation.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".order").forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        alert("Thank you for your interest in " +
+          button.dataset.product +
+          ". Please contact Drakmas Lyon Empire to confirm availability, USD pricing and delivery.");
+      });
+    });
+  </script>
+</body>
+</html>
