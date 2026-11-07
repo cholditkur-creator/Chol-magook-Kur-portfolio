@@ -1,1111 +1,1096 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chol Magook Kur | Executive Portfolio</title>
-    <meta name="description" content="Chol Magook Kur is a visionary leader, entrepreneur, and technology innovator focused on strategic growth, investment, and sustainable innovation." />
+    <meta
+      name="description"
+      content="Chol Magook Kur is a visionary leader, entrepreneur, and technology innovator focused on strategic growth, investment, and sustainable innovation."
+    />
     <style>
-        :root {
-            --bg: #f3f7fb;
-            --bg-soft: #eaf3ff;
-            --panel: rgba(255,255,255,0.75);
-            --panel-strong: #ffffff;
-            --panel-alt: #eef5ff;
-            --navy: #081827;
-            --navy-soft: #10253b;
-            --blue: #0a84c8;
-            --blue-deep: #045a8d;
-            --gold: #d4af37;
-            --gold-soft: #f3d77a;
-            --text: #344867;
-            --text-strong: #0b1d30;
-            --muted: #60708a;
-            --line: rgba(10, 132, 200, 0.12);
-            --shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
-            --shadow-strong: 0 26px 70px rgba(15, 23, 42, 0.18);
-            --success: #16a34a;
-            --danger: #dc2626;
-            --radius: 24px;
-            --radius-lg: 32px;
-        }
+      :root {
+        --bg: #f5f7fb;
+        --bg-2: #edf4ff;
+        --surface: rgba(255, 255, 255, 0.82);
+        --surface-strong: #ffffff;
+        --surface-soft: #eff6ff;
+        --navy: #0b1d2d;
+        --navy-soft: #16324a;
+        --blue: #0c86c7;
+        --blue-deep: #045d9c;
+        --gold: #d8b24a;
+        --gold-soft: #f5dc8e;
+        --text: #2e3d53;
+        --text-strong: #102234;
+        --muted: #5d6d81;
+        --line: rgba(12, 134, 199, 0.14);
+        --shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+        --shadow-strong: 0 24px 70px rgba(15, 23, 42, 0.18);
+        --success: #16a34a;
+        --radius: 24px;
+        --radius-lg: 32px;
+      }
 
-        body.dark-mode {
-            --bg: #081726;
-            --bg-soft: #0d1b2a;
-            --panel: rgba(15, 23, 42, 0.74);
-            --panel-strong: #101d2f;
-            --panel-alt: #0d1e32;
-            --navy: #020d1b;
-            --navy-soft: #0d1e2f;
-            --blue: #66d0ff;
-            --blue-deep: #1da0ed;
-            --gold: #f0cd67;
-            --gold-soft: #ffe087;
-            --text: #d5e7f8;
-            --text-strong: #f5f9ff;
-            --muted: #9cb3c7;
-            --line: rgba(148, 163, 184, 0.17);
-            --shadow: 0 20px 45px rgba(2, 6, 23, 0.4);
-            --shadow-strong: 0 28px 75px rgba(2, 6, 23, 0.52);
-        }
+      body.dark-mode {
+        --bg: #071722;
+        --bg-2: #0c1d2b;
+        --surface: rgba(12, 21, 33, 0.8);
+        --surface-strong: #101f2f;
+        --surface-soft: #122638;
+        --navy: #020d1b;
+        --navy-soft: #10263d;
+        --blue: #6dd0ff;
+        --blue-deep: #20a5f2;
+        --gold: #f0cd6b;
+        --gold-soft: #ffe196;
+        --text: #dbeaf9;
+        --text-strong: #f4f9ff;
+        --muted: #a5bbcd;
+        --line: rgba(148, 163, 184, 0.18);
+        --shadow: 0 22px 52px rgba(2, 6, 23, 0.5);
+        --shadow-strong: 0 30px 80px rgba(2, 6, 23, 0.62);
+      }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(180deg, var(--bg) 0%, #edf5ff 100%);
-            color: var(--text);
-            line-height: 1.68;
-            transition: background-color 0.35s ease, color 0.35s ease;
-        }
-        body.dark-mode { background: linear-gradient(180deg, var(--bg) 0%, #071420 100%); }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+        color: var(--text);
+        line-height: 1.7;
+        transition: all 0.35s ease;
+      }
+      a { text-decoration: none; color: inherit; }
+      img { max-width: 100%; display: block; }
+      button, input, textarea { font: inherit; }
+      .container { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
+      .section { padding: 5.5rem 0; }
 
-        a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; display: block; }
-        button, input, textarea { font: inherit; }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.12rem;
+        text-transform: uppercase;
+        color: var(--blue);
+        margin-bottom: 1rem;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--gold), var(--blue));
+        box-shadow: 0 0 0 6px rgba(12, 134, 199, 0.08);
+      }
 
-        .container { width: min(1150px, calc(100% - 2rem)); margin: 0 auto; }
-        .section { position: relative; padding: 5.5rem 0; }
+      h1, h2, h3, h4 { color: var(--text-strong); line-height: 1.15; }
+      h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.8rem; }
+      p { color: var(--text); }
 
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.55rem;
-            font-size: 0.76rem;
-            font-weight: 800;
-            letter-spacing: 0.16rem;
-            text-transform: uppercase;
-            color: var(--blue);
-            margin-bottom: 1rem;
-        }
-        .eyebrow::before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--gold), var(--blue));
-            box-shadow: 0 0 0 6px rgba(10, 132, 200, 0.08);
-        }
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        backdrop-filter: blur(18px);
+        background: rgba(11, 29, 45, 0.82);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+      .nav-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 82px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+      }
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--gold), var(--blue));
+        color: white;
+        box-shadow: 0 12px 25px rgba(12, 134, 199, 0.35);
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+      }
+      .nav-links a {
+        color: rgba(255,255,255,0.86);
+        font-size: 0.96rem;
+        font-weight: 700;
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+      .nav-links a:hover, .nav-links a:focus-visible {
+        color: white;
+        transform: translateY(-1px);
+      }
+      .nav-actions { display: flex; align-items: center; gap: 1rem; }
 
-        h1, h2, h3, h4 { color: var(--text-strong); line-height: 1.15; }
-        h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.8rem; }
-        p { color: var(--text); }
+      .theme-toggle-btn,
+      .btn {
+        border: none;
+        cursor: pointer;
+        border-radius: 999px;
+        font-weight: 800;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      }
+      .theme-toggle-btn {
+        background: rgba(255,255,255,0.08);
+        color: white;
+        padding: 0.7rem 1rem;
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+      .theme-toggle-btn:hover, .btn:hover { transform: translateY(-2px); }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        padding: 1rem 1.65rem;
+        background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+        color: white;
+        box-shadow: 0 12px 30px rgba(12, 134, 199, 0.24);
+      }
+      .btn.secondary {
+        background: rgba(255,255,255,0.06);
+        color: var(--text-strong);
+        border: 1px solid var(--line);
+        box-shadow: none;
+      }
+      body.dark-mode .btn.secondary {
+        background: rgba(255,255,255,0.03);
+      }
 
-        .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 30;
-            backdrop-filter: blur(18px);
-            background: rgba(8, 24, 39, 0.82);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .nav-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 82px;
-        }
+      .hero {
+        position: relative;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 85% 15%, rgba(216, 178, 74, 0.22), transparent 20%),
+          radial-gradient(circle at 15% 15%, rgba(12, 134, 199, 0.18), transparent 28%),
+          linear-gradient(135deg, #091d2d 0%, #0d243a 46%, #16324a 100%);
+        color: white;
+      }
+      .hero::before, .hero::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(12px);
+        opacity: 0.65;
+      }
+      .hero::before {
+        width: 420px;
+        height: 420px;
+        right: -120px;
+        top: 24px;
+        background: rgba(216, 178, 74, 0.14);
+      }
+      .hero::after {
+        width: 360px;
+        height: 360px;
+        left: -110px;
+        bottom: 0;
+        background: rgba(12, 134, 199, 0.18);
+      }
+      .hero .container {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1.18fr 0.82fr;
+        gap: 2rem;
+        align-items: center;
+        min-height: 720px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .hero-copy h1 {
+        font-size: clamp(2.8rem, 5vw, 5rem);
+        color: white;
+        letter-spacing: -0.07em;
+        margin-bottom: 1.2rem;
+        max-width: 700px;
+      }
+      .hero-copy h1 .accent {
+        background: linear-gradient(135deg, var(--gold), #fce7b3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .hero-copy p {
+        max-width: 620px;
+        color: rgba(255,255,255,0.82);
+        font-size: 1.08rem;
+        margin-bottom: 2rem;
+      }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.2rem; }
+      .hero-stats { display: flex; flex-wrap: wrap; gap: 1rem; max-width: 560px; }
+      .stat-pill {
+        min-width: 145px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 18px;
+        padding: 1rem 1.2rem;
+        backdrop-filter: blur(10px);
+      }
+      .stat-pill strong { display: block; font-size: 1.5rem; color: white; }
+      .stat-pill span {
+        color: rgba(255,255,255,0.74);
+        font-size: 0.76rem;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+      }
 
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.8rem;
-            color: #fff;
-            font-weight: 800;
-            letter-spacing: 0.08rem;
-            text-transform: uppercase;
-        }
-        .brand-mark {
-            width: 42px;
-            height: 42px;
-            border-radius: 14px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, var(--gold), var(--blue));
-            color: #fff;
-            box-shadow: 0 12px 25px rgba(10, 132, 200, 0.35);
-        }
+      .hero-card {
+        position: relative;
+        padding: 1.2rem;
+        border-radius: 30px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06));
+        border: 1px solid rgba(255,255,255,0.14);
+        box-shadow: var(--shadow-strong);
+      }
+      .profile-panel {
+        padding: 1.4rem;
+        border-radius: 26px;
+        background: rgba(9, 18, 30, 0.7);
+        border: 1px solid rgba(255,255,255,0.09);
+      }
+      .profile-image-wrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 22px;
+        margin-bottom: 1.2rem;
+        border: 1px solid rgba(255,255,255,0.1);
+      }
+      .profile-image-wrap img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+      .profile-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.9rem;
+      }
+      .presence-badge {
+        background: rgba(22, 163, 74, 0.12);
+        border: 1px solid rgba(75, 222, 140, 0.4);
+        color: #9ef7be;
+        padding: 0.45rem 0.85rem;
+        border-radius: 999px;
+        font-size: 0.74rem;
+        font-weight: 700;
+      }
+      .profile-name { font-size: 1.9rem; color: white; margin-bottom: 0.2rem; }
+      .profile-role { color: rgba(255,255,255,0.72); font-size: 0.93rem; }
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .mini-card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 16px;
+        padding: 1rem;
+      }
+      .mini-card strong { display: block; color: white; font-size: 1.18rem; }
+      .mini-card span {
+        color: rgba(255,255,255,0.72);
+        font-size: 0.76rem;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+      }
 
-        .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-        .nav-links a {
-            color: rgba(255,255,255,0.85);
-            font-size: 0.96rem;
-            font-weight: 700;
-            transition: color 0.2s ease, transform 0.2s ease;
-        }
-        .nav-links a:hover, .nav-links a:focus-visible {
-            color: white;
-            transform: translateY(-1px);
-        }
-        .nav-actions { display: flex; align-items: center; gap: 1rem; }
+      .section-heading { max-width: 760px; margin-bottom: 2.5rem; }
+      .section-heading p { color: var(--muted); font-size: 1.04rem; }
 
-        .theme-toggle-btn,
-        .btn {
-            border: none;
-            cursor: pointer;
-            border-radius: 999px;
-            font-weight: 800;
-            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-        }
-        .theme-toggle-btn {
-            background: rgba(255,255,255,0.08);
-            color: white;
-            padding: 0.7rem 1rem;
-            border: 1px solid rgba(255,255,255,0.12);
-        }
-        .theme-toggle-btn:hover, .btn:hover { transform: translateY(-2px); }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.55rem;
-            padding: 1rem 1.65rem;
-            background: linear-gradient(135deg, var(--blue), var(--blue-deep));
-            color: white;
-            box-shadow: 0 12px 30px rgba(10, 132, 200, 0.24);
-        }
-        .btn.secondary {
-            background: rgba(255,255,255,0.06);
-            color: var(--text-strong);
-            border: 1px solid var(--line);
-            box-shadow: none;
-        }
-        body.dark-mode .btn.secondary {
-            background: rgba(255,255,255,0.03);
-            color: var(--text-strong);
-        }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 2rem;
+        align-items: center;
+      }
+      .about-copy { font-size: 1.04rem; }
+      .about-copy p + p { margin-top: 1rem; }
+      .info-card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(239,246,255,0.7));
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        box-shadow: var(--shadow);
+      }
+      body.dark-mode .info-card {
+        background: linear-gradient(180deg, rgba(12,21,33,0.78), rgba(17,24,39,0.72));
+      }
+      .info-list { list-style: none; display: grid; gap: 1rem; }
+      .info-list li {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding-bottom: 0.9rem;
+        border-bottom: 1px solid var(--line);
+      }
+      .info-list li:last-child { border-bottom: none; padding-bottom: 0; }
+      .icon-badge {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: rgba(12, 134, 199, 0.1);
+        color: var(--blue);
+        font-weight: 900;
+      }
+      .info-text strong { color: var(--text-strong); display: block; }
+      .info-text span { color: var(--muted); font-size: 0.92rem; }
 
-        .hero {
-            position: relative;
-            overflow: hidden;
-            background:
-                radial-gradient(circle at 85% 15%, rgba(212, 175, 55, 0.24), transparent 20%),
-                radial-gradient(circle at 15% 15%, rgba(10, 132, 200, 0.18), transparent 28%),
-                linear-gradient(135deg, #081827 0%, #0d1d32 46%, #17314d 100%);
-            color: white;
-        }
-        .hero::before, .hero::after {
-            content: "";
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(12px);
-            opacity: 0.6;
-        }
-        .hero::before {
-            width: 420px;
-            height: 420px;
-            right: -120px;
-            top: 40px;
-            background: rgba(212, 175, 55, 0.13);
-        }
-        .hero::after {
-            width: 360px;
-            height: 360px;
-            left: -110px;
-            bottom: 0;
-            background: rgba(10, 132, 200, 0.15);
-        }
+      .feature-grid, .impact-grid, .project-grid, .timeline { display: grid; gap: 1.5rem; }
+      .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .impact-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .project-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .timeline { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
-        .hero .container {
-            position: relative;
-            z-index: 1;
-            display: grid;
-            grid-template-columns: 1.18fr 0.82fr;
-            gap: 2rem;
-            align-items: center;
-            min-height: 720px;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
+      .feature-card, .impact-card, .project-card, .timeline-item, .faq-item, .contact-panel {
+        background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.68));
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+      body.dark-mode .feature-card,
+      body.dark-mode .impact-card,
+      body.dark-mode .project-card,
+      body.dark-mode .timeline-item,
+      body.dark-mode .faq-item,
+      body.dark-mode .contact-panel {
+        background: linear-gradient(180deg, rgba(15,23,42,0.88), rgba(15,23,42,0.78));
+      }
+      .feature-card, .project-card, .timeline-item, .impact-card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      }
+      .feature-card:hover, .project-card:hover, .timeline-item:hover, .impact-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-strong);
+        border-color: rgba(12,134,199,0.22);
+      }
 
-        .hero-copy h1 {
-            font-size: clamp(2.8rem, 5vw, 5rem);
-            color: white;
-            letter-spacing: -0.07em;
-            margin-bottom: 1.2rem;
-            max-width: 700px;
-        }
-        .hero-copy h1 .accent {
-            background: linear-gradient(135deg, var(--gold), #fce7a8);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .hero-copy p {
-            max-width: 630px;
-            color: rgba(255,255,255,0.82);
-            font-size: 1.08rem;
-            margin-bottom: 2rem;
-        }
+      .feature-card { overflow: hidden; }
+      .feature-card .card-image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+      .feature-card-content { padding: 1.4rem 1.4rem 1.6rem; }
+      .feature-card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; }
 
-        .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.2rem; }
-        .hero-stats { display: flex; flex-wrap: wrap; gap: 1rem; max-width: 560px; }
-        .stat-pill {
-            min-width: 145px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.12);
-            border-radius: 18px;
-            padding: 1rem 1.2rem;
-            backdrop-filter: blur(10px);
-        }
-        .stat-pill strong {
-            display: block;
-            font-size: 1.5rem;
-            color: #fff;
-        }
-        .stat-pill span {
-            color: rgba(255,255,255,0.75);
-            font-size: 0.76rem;
-            letter-spacing: 0.08rem;
-            text-transform: uppercase;
-        }
+      .impact-card { padding: 1.8rem 1.5rem; text-align: center; }
+      .impact-card strong {
+        display: block;
+        font-size: clamp(2rem, 3vw, 2.7rem);
+        color: var(--text-strong);
+      }
+      .impact-card span { color: var(--muted); font-weight: 700; }
 
-        .hero-card {
-            position: relative;
-            padding: 1.2rem;
-            border-radius: 30px;
-            background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06));
-            border: 1px solid rgba(255,255,255,0.14);
-            box-shadow: var(--shadow-strong);
-        }
-        .profile-panel {
-            padding: 1.5rem;
-            border-radius: 26px;
-            background: rgba(9, 18, 30, 0.65);
-            border: 1px solid rgba(255,255,255,0.09);
-        }
+      .project-card {
+        padding: 1.6rem;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+      }
+      .project-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--blue), var(--gold));
+      }
+      .project-card .tag {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+        background: rgba(12,134,199,0.08);
+        color: var(--blue);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.06rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .project-card h3 { font-size: 1.25rem; margin-bottom: 0.55rem; }
 
-        .profile-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
-        .avatar {
-            width: 76px;
-            height: 76px;
-            border-radius: 20px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, var(--gold-soft), var(--gold));
-            color: #0d1a2d;
-            font-size: 1.6rem;
-            font-weight: 900;
-            box-shadow: 0 12px 26px rgba(212, 175, 55, 0.28);
-        }
-        .presence-badge {
-            background: rgba(22, 163, 74, 0.12);
-            border: 1px solid rgba(75, 222, 140, 0.4);
-            color: #98f4b7;
-            padding: 0.45rem 0.85rem;
-            border-radius: 999px;
-            font-size: 0.74rem;
-            font-weight: 700;
-        }
-        .profile-name { font-size: 1.9rem; color: #fff; margin-bottom: 0.2rem; }
-        .profile-role { color: rgba(255,255,255,0.72); font-size: 0.93rem; }
+      .timeline-item {
+        padding: 1.5rem 1.3rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--blue), var(--gold));
+      }
+      .timeline-year {
+        color: var(--blue);
+        font-weight: 900;
+        letter-spacing: 0.08rem;
+        margin-bottom: 0.8rem;
+      }
+      .timeline-item h3 { font-size: 1.2rem; margin-bottom: 0.55rem; }
 
-        .mini-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        .mini-card {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 16px;
-            padding: 1rem;
-        }
-        .mini-card strong { display: block; color: white; font-size: 1.18rem; }
-        .mini-card span {
-            color: rgba(255,255,255,0.72);
-            font-size: 0.76rem;
-            letter-spacing: 0.08rem;
-            text-transform: uppercase;
-        }
+      .faq-wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+      }
+      .faq-item { overflow: hidden; }
+      .faq-question {
+        width: 100%;
+        background: transparent;
+        border: none;
+        color: var(--text-strong);
+        text-align: left;
+        padding: 1.25rem 1.35rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        font-size: 1.05rem;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      .faq-question span {
+        font-size: 1.7rem;
+        color: var(--blue);
+        line-height: 1;
+      }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.25s ease;
+        color: var(--muted);
+        padding: 0 1.35rem;
+      }
+      .faq-item.active .faq-answer { max-height: 240px; padding: 0 1.35rem 1.3rem; }
 
-        .section-heading { max-width: 720px; margin-bottom: 2.5rem; }
-        .section-heading p { color: var(--muted); font-size: 1.04rem; }
+      .contact-layout {
+        display: grid;
+        grid-template-columns: 0.94fr 1.06fr;
+        gap: 1.5rem;
+      }
+      .contact-panel { padding: 2rem; }
+      .contact-panel h3 { font-size: 1.7rem; margin-bottom: 0.8rem; }
+      .contact-list {
+        list-style: none;
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .contact-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.85rem;
+      }
+      .contact-list .dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--blue), var(--gold));
+        margin-top: 0.45rem;
+        flex-shrink: 0;
+      }
+      .contact-form { display: grid; gap: 1rem; }
+      .field { display: grid; gap: 0.55rem; }
+      .field label { color: var(--text-strong); font-weight: 700; }
+      .field input, .field textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(255,255,255,0.04);
+        padding: 0.95rem 1rem;
+        color: var(--text-strong);
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .field input:focus, .field textarea:focus {
+        border-color: rgba(12,134,199,0.7);
+        box-shadow: 0 0 0 4px rgba(12,134,199,0.12);
+      }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.08fr 0.92fr;
-            gap: 2rem;
-            align-items: center;
-        }
-        .about-copy { font-size: 1.04rem; }
-        .about-copy p + p { margin-top: 1rem; }
+      .site-footer {
+        background: linear-gradient(180deg, var(--navy), var(--navy-soft));
+        color: #dfeaf5;
+        padding: 3rem 0 2rem;
+      }
+      .footer-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .footer-socials { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(148,163,184,0.24);
+        color: #edf4ff;
+        font-size: 0.85rem;
+        transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      }
+      .social-link:hover {
+        border-color: rgba(12,134,199,0.7);
+        background: rgba(12,134,199,0.08);
+        transform: translateY(-2px);
+      }
+      #formMessage { margin-top: 0.2rem; font-weight: 800; display: none; }
 
-        .info-card {
-            background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(240,246,255,0.7));
-            border: 1px solid var(--line);
-            border-radius: var(--radius-lg);
-            padding: 2rem;
-            box-shadow: var(--shadow);
-        }
-        body.dark-mode .info-card {
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.78), rgba(17, 24, 39, 0.72));
-        }
-        .info-list { list-style: none; display: grid; gap: 1rem; }
-        .info-list li {
-            display: flex;
-            align-items: center;
-            gap: 0.9rem;
-            padding-bottom: 0.9rem;
-            border-bottom: 1px solid var(--line);
-        }
-        .info-list li:last-child { border-bottom: none; padding-bottom: 0; }
-        .icon-badge {
-            width: 44px;
-            height: 44px;
-            border-radius: 14px;
-            display: grid;
-            place-items: center;
-            background: rgba(10,132,200,0.09);
-            color: var(--blue);
-            font-weight: 900;
-        }
-        .info-text strong { color: var(--text-strong); display: block; }
-        .info-text span { color: var(--muted); font-size: 0.92rem; }
-
-        .feature-grid, .impact-grid, .project-grid, .timeline { display: grid; gap: 1.5rem; }
-        .feature-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-        .impact-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-        .project-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-        .timeline { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-
-        .feature-card, .impact-card, .project-card, .timeline-item, .faq-item, .contact-panel {
-            background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.68));
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-        }
-        body.dark-mode .feature-card, body.dark-mode .impact-card, body.dark-mode .project-card, body.dark-mode .timeline-item, body.dark-mode .faq-item, body.dark-mode .contact-panel {
-            background: linear-gradient(180deg, rgba(15,23,42,0.88), rgba(15,23,42,0.78));
-        }
-
-        .feature-card, .project-card, .timeline-item, .impact-card {
-            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-        }
-        .feature-card:hover, .project-card:hover, .timeline-item:hover, .impact-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-strong);
-            border-color: rgba(10,132,200,0.22);
-        }
-
-        .feature-card { padding: 1.7rem; }
-        .feature-icon {
-            width: 58px;
-            height: 58px;
-            border-radius: 18px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, rgba(10,132,200,0.12), rgba(212,175,55,0.18));
-            color: var(--blue);
-            font-size: 1.35rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-        }
-        .feature-card h3 { font-size: 1.3rem; margin-bottom: 0.65rem; }
-
-        .impact-card { padding: 1.8rem 1.5rem; text-align: center; }
-        .impact-card strong {
-            display: block;
-            font-size: clamp(2rem, 3vw, 2.7rem);
-            color: var(--text-strong);
-        }
-        .impact-card span { color: var(--muted); font-weight: 700; }
-
-        .project-card {
-            padding: 1.6rem;
-            min-height: 220px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-            overflow: hidden;
-        }
-        .project-card::before {
-            content: "";
-            position: absolute;
-            inset: 0 auto auto 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--blue), var(--gold));
-        }
-        .project-card .tag {
-            display: inline-flex;
-            align-items: center;
-            align-self: flex-start;
-            border-radius: 999px;
-            padding: 0.35rem 0.75rem;
-            background: rgba(10,132,200,0.08);
-            color: var(--blue);
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0.06rem;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-        .project-card h3 { font-size: 1.25rem; margin-bottom: 0.55rem; }
-
-        .timeline-item {
-            padding: 1.5rem 1.3rem;
-            position: relative;
-            overflow: hidden;
-        }
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            inset: 0 auto auto 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--blue), var(--gold));
-        }
-        .timeline-year {
-            color: var(--blue);
-            font-weight: 900;
-            letter-spacing: 0.08rem;
-            margin-bottom: 0.8rem;
-        }
-        .timeline-item h3 { font-size: 1.2rem; margin-bottom: 0.55rem; }
-
-        .faq-wrap {
-            max-width: 820px;
-            margin: 0 auto;
-            display: grid;
-            gap: 1rem;
-        }
-        .faq-item { overflow: hidden; }
-        .faq-question {
-            width: 100%;
-            background: transparent;
-            border: none;
-            color: var(--text-strong);
-            text-align: left;
-            padding: 1.25rem 1.35rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1.5rem;
-            font-size: 1.05rem;
-            font-weight: 800;
-            cursor: pointer;
-        }
-        .faq-question span {
-            font-size: 1.7rem;
-            color: var(--blue);
-            line-height: 1;
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.35s ease, padding 0.25s ease;
-            color: var(--muted);
-            padding: 0 1.35rem;
-        }
-        .faq-item.active .faq-answer { max-height: 240px; padding: 0 1.35rem 1.3rem; }
-
-        .contact-layout {
-            display: grid;
-            grid-template-columns: 0.94fr 1.06fr;
-            gap: 1.5rem;
-        }
-        .contact-panel { padding: 2rem; }
-        .contact-panel h3 { font-size: 1.7rem; margin-bottom: 0.8rem; }
-        .contact-list {
-            list-style: none;
-            display: grid;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        .contact-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.85rem;
-        }
-        .contact-list .dot {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--blue), var(--gold));
-            margin-top: 0.45rem;
-            flex-shrink: 0;
-        }
-
-        .contact-form { display: grid; gap: 1rem; }
-        .field { display: grid; gap: 0.55rem; }
-        .field label { color: var(--text-strong); font-weight: 700; }
-        .field input, .field textarea {
-            width: 100%;
-            border: 1px solid var(--line);
-            border-radius: 14px;
-            background: rgba(255,255,255,0.04);
-            padding: 0.95rem 1rem;
-            color: var(--text-strong);
-            outline: none;
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-        .field input:focus, .field textarea:focus {
-            border-color: rgba(10,132,200,0.7);
-            box-shadow: 0 0 0 4px rgba(10,132,200,0.12);
-        }
-
-        .site-footer {
-            background: linear-gradient(180deg, var(--navy), var(--navy-soft));
-            color: #cbd5e1;
-            padding: 3rem 0 2rem;
-        }
-        .footer-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        .footer-socials { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.7rem 1rem;
-            border-radius: 999px;
-            border: 1px solid rgba(148,163,184,0.24);
-            color: #edf4ff;
-            font-size: 0.85rem;
-            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-        }
-        .social-link:hover {
-            border-color: rgba(10,132,200,0.7);
-            background: rgba(10,132,200,0.08);
-            transform: translateY(-2px);
-        }
-        #formMessage { margin-top: 0.2rem; font-weight: 800; display: none; }
-
-        @media (max-width: 980px) {
-            .hero .container, .about-grid, .contact-layout { grid-template-columns: 1fr; }
-            .feature-grid, .impact-grid, .project-grid, .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        }
-        @media (max-width: 760px) {
-            .nav-links { display: none; }
-            .hero .container { min-height: auto; padding-top: 4rem; }
-            .feature-grid, .impact-grid, .project-grid, .timeline { grid-template-columns: 1fr; }
-            .footer-wrap { flex-direction: column; align-items: flex-start; }
-        }
+      @media (max-width: 980px) {
+        .hero .container, .about-grid, .contact-layout { grid-template-columns: 1fr; }
+        .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .impact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      @media (max-width: 760px) {
+        .nav-links { display: none; }
+        .hero .container { min-height: auto; padding-top: 4rem; }
+        .feature-grid, .impact-grid, .project-grid, .timeline { grid-template-columns: 1fr; }
+        .footer-wrap { flex-direction: column; align-items: flex-start; }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container nav-wrap">
-            <a href="#home" class="brand" aria-label="Chol Magook Kur home">
-                <span class="brand-mark">CM</span>
-                <span>CMK</span>
-            </a>
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Chol Magook Kur home">
+          <span class="brand-mark">CM</span>
+          <span>CMK</span>
+        </a>
 
-            <nav aria-label="Main navigation">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#ventures">Ventures</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#ventures">Ventures</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-            <div class="nav-actions">
-                <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-                    Dark Mode
-                </button>
-            </div>
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            Dark Mode
+          </button>
         </div>
+      </div>
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-copy">
-                    <span class="eyebrow">Entrepreneur • Investor • Innovator</span>
-                    <h1>
-                        Building meaningful growth through <span class="accent">vision</span>, leadership, and innovation.
-                    </h1>
-                    <p>
-                        In a world driven by rapid technological change and shifting economic landscapes, leadership requires more than vision—it requires discipline, strategic foresight, and action.
-                        Meet Chol Magook Kur—a visionary statesman, tech innovator, entrepreneur, and founder of Chol and Sons Investment Company Limited.
-                    </p>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-copy">
+            <span class="eyebrow">Entrepreneur • Investor • Innovator</span>
+            <h1>
+              Building meaningful growth through <span class="accent">vision</span>, leadership, and innovation.
+            </h1>
+            <p>
+              Chol Magook Kur is a visionary leader, entrepreneur, and technology-focused executive committed to building sustainable value through strategic planning, innovation, and disciplined execution.
+            </p>
 
-                    <div class="hero-actions">
-                        <a href="#ventures" class="btn">Explore Ventures</a>
-                        <a href="#contact" class="btn secondary">Connect</a>
-                    </div>
-
-                    <div class="hero-stats" aria-label="Key metrics">
-                        <div class="stat-pill">
-                            <strong>10+</strong>
-                            <span>Years Strategy</span>
-                        </div>
-                        <div class="stat-pill">
-                            <strong>5+</strong>
-                            <span>Focus Areas</span>
-                        </div>
-                        <div class="stat-pill">
-                            <strong>∞</strong>
-                            <span>Vision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-card" aria-label="Profile summary card">
-                    <div class="profile-panel">
-                        <div class="profile-head">
-                            <div class="avatar">CK</div>
-                            <div class="presence-badge">Available for opportunities</div>
-                        </div>
-
-                        <div class="profile-name">Chol Magook Kur</div>
-                        <div class="profile-role">Founder of Chol and Sons Investment Company Limited</div>
-
-                        <div class="mini-grid">
-                            <div class="mini-card">
-                                <strong>Leadership</strong>
-                                <span>Vision</span>
-                            </div>
-                            <div class="mini-card">
-                                <strong>Technology</strong>
-                                <span>Innovation</span>
-                            </div>
-                            <div class="mini-card">
-                                <strong>Investment</strong>
-                                <span>Strategy</span>
-                            </div>
-                            <div class="mini-card">
-                                <strong>Growth</strong>
-                                <span>Sustainable</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-actions">
+              <a href="#ventures" class="btn">Explore Ventures</a>
+              <a href="#contact" class="btn secondary">Connect</a>
             </div>
-        </section>
 
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">About</span>
-                    <h2>Leadership driven by purpose, discipline, and future-focused thinking.</h2>
-                </div>
-
-                <div class="about-grid">
-                    <div class="about-copy">
-                        <p>
-                            Chol Magook Kur is a visionary entrepreneur and technology-focused executive with a strong commitment to building ventures that create value, improve systems, and foster long-term opportunity. His work blends strategic thinking, practical execution, and a belief in sustainable growth.
-                        </p>
-                        <p>
-                            Through Chol and Sons Investment Company Limited—also operating through key ventures like CASICO Limited—he focuses on identifying high-impact opportunities, fostering responsible growth, and creating practical solutions across multiple sectors. His leadership style emphasizes clarity, resilience, and building enduring foundations for the future.
-                        </p>
-                        <p>
-                            With a deep background spanning international oil and gas management, quality assurance, public relations, and technology, Chol leverages practical innovation to solve complex challenges. His focus on SMART Technology seeks to connect people, improve operational efficiency, and unlock scalable opportunities for communities and businesses alike.
-                        </p>
-                    </div>
-
-                    <div class="info-card">
-                        <ul class="info-list">
-                            <li>
-                                <span class="icon-badge">01</span>
-                                <span class="info-text">
-                                    <strong>Strategic Direction</strong>
-                                    <span>Turning opportunities into value-driven outcomes.</span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="icon-badge">02</span>
-                                <span class="info-text">
-                                    <strong>Entrepreneurial Mindset</strong>
-                                    <span>Building future-ready ventures with clarity and courage.</span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="icon-badge">03</span>
-                                <span class="info-text">
-                                    <strong>Technology &amp; Innovation</strong>
-                                    <span>Leveraging digital ideas to improve access and efficiency.</span>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="hero-stats" aria-label="Key metrics">
+              <div class="stat-pill">
+                <strong>10+</strong>
+                <span>Years Strategy</span>
+              </div>
+              <div class="stat-pill">
+                <strong>5+</strong>
+                <span>Focus Areas</span>
+              </div>
+              <div class="stat-pill">
+                <strong>∞</strong>
+                <span>Vision</span>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section class="section" id="expertise">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Core strengths</span>
-                    <h2>Focused on the disciplines that drive sustainable progress.</h2>
+          <div class="hero-card" aria-label="Profile summary card">
+            <div class="profile-panel">
+              <div class="profile-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+                  alt="Chol Magook Kur portrait"
+                />
+              </div>
+
+              <div class="profile-head">
+                <div>
+                  <div class="profile-name">Chol Magook Kur</div>
+                  <div class="profile-role">Founder of Chol and Sons Investment Company Limited</div>
                 </div>
+                <div class="presence-badge">Available</div>
+              </div>
 
-                <div class="feature-grid">
-                    <article class="feature-card">
-                        <div class="feature-icon">L</div>
-                        <h3>Leadership</h3>
-                        <p>Inspiring teams, aligning vision, and creating momentum through disciplined execution.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">S</div>
-                        <h3>Strategic Thinking</h3>
-                        <p>Making informed decisions, shaping direction, and planning for resilient futures.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">T</div>
-                        <h3>Technology &amp; Innovation</h3>
-                        <p>Exploring practical digital solutions that improve efficiency and unlock opportunities.</p>
-                    </article>
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <strong>Leadership</strong>
+                  <span>Vision</span>
                 </div>
+                <div class="mini-card">
+                  <strong>Technology</strong>
+                  <span>Innovation</span>
+                </div>
+                <div class="mini-card">
+                  <strong>Investment</strong>
+                  <span>Strategy</span>
+                </div>
+                <div class="mini-card">
+                  <strong>Growth</strong>
+                  <span>Sustainable</span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="section" aria-label="Impact metrics">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Impact</span>
-                    <h2>Principled growth grounded in long-term thinking.</h2>
-                </div>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">About</span>
+            <h2>Leadership driven by purpose, discipline, and future-focused thinking.</h2>
+          </div>
 
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <strong>90%</strong>
-                        <span>Leadership</span>
-                    </div>
-                    <div class="impact-card">
-                        <strong>88%</strong>
-                        <span>Entrepreneurship</span>
-                    </div>
-                    <div class="impact-card">
-                        <strong>82%</strong>
-                        <span>Technology</span>
-                    </div>
-                    <div class="impact-card">
-                        <strong>86%</strong>
-                        <span>Strategic Thinking</span>
-                    </div>
-                </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                Chol Magook Kur is a visionary entrepreneur with a strong commitment to creating value through strategic leadership, sustainable innovation, and meaningful business development.
+              </p>
+              <p>
+                Through Chol and Sons Investment Company Limited and associated ventures such as CASICO Limited, he focuses on identifying high-impact opportunities, supporting transformation, and building long-term growth across key sectors.
+              </p>
+              <p>
+                With experience across leadership, technology, investment, and public-facing business growth, Chol combines practical strategy with forward-looking thinking to create momentum in dynamic markets.
+              </p>
             </div>
-        </section>
 
-        <section class="section" id="ventures">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Ventures</span>
-                    <h2>Building legacy through strategic opportunity and innovation.</h2>
-                </div>
-
-                <div class="project-grid">
-                    <article class="project-card">
-                        <div>
-                            <span class="tag">Investment</span>
-                            <h3>Chol and Sons Investment Company Limited</h3>
-                        </div>
-                        <p>A growing investment company focused on identifying opportunities, building sustainable ventures, and creating long-term value through disciplined entrepreneurship.</p>
-                    </article>
-
-                    <article class="project-card">
-                        <div>
-                            <span class="tag">Technology</span>
-                            <h3>SMART Technology</h3>
-                        </div>
-                        <p>Exploring technology-driven solutions that connect people, improve efficiency, and create practical opportunities for businesses and communities.</p>
-                    </article>
-
-                    <article class="project-card">
-                        <div>
-                            <span class="tag">Innovation</span>
-                            <h3>CASICO Limited</h3>
-                        </div>
-                        <p>Developing ideas into practical projects through creativity, strategic thinking, leadership, and continuous learning.</p>
-                    </article>
-
-                    <article class="project-card">
-                        <div>
-                            <span class="tag">Future</span>
-                            <h3>Future Investment</h3>
-                        </div>
-                        <p>Building a foundation for future investments with a focus on responsible growth, opportunity creation, and sustainable development.</p>
-                    </article>
-                </div>
+            <div class="info-card">
+              <ul class="info-list">
+                <li>
+                  <span class="icon-badge">01</span>
+                  <span class="info-text">
+                    <strong>Strategic Direction</strong>
+                    <span>Turning opportunities into value-driven outcomes.</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="icon-badge">02</span>
+                  <span class="info-text">
+                    <strong>Entrepreneurial Mindset</strong>
+                    <span>Building future-ready ventures with clarity and courage.</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="icon-badge">03</span>
+                  <span class="info-text">
+                    <strong>Technology &amp; Innovation</strong>
+                    <span>Leveraging digital ideas to improve access and efficiency.</span>
+                  </span>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="section" aria-label="Leadership journey">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Journey</span>
-                    <h2>Progress shaped by vision, resilience, and execution.</h2>
-                </div>
+      <section class="section" id="expertise">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Core strengths</span>
+            <h2>Focused on the disciplines that drive sustainable progress.</h2>
+          </div>
 
-                <div class="timeline">
-                    <article class="timeline-item">
-                        <div class="timeline-year">2019</div>
-                        <h3>Vision</h3>
-                        <p>Setting a strategic foundation guided by long-term potential and disciplined thinking.</p>
-                    </article>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80"
+                alt="Leadership concept"
+                loading="lazy"
+              />
+              <div class="feature-card-content">
+                <h3>Leadership</h3>
+                <p>Inspiring teams, aligning vision, and creating momentum through disciplined execution.</p>
+              </div>
+            </article>
 
-                    <article class="timeline-item">
-                        <div class="timeline-year">2021</div>
-                        <h3>Execution</h3>
-                        <p>Translating opportunity into action through practical business leadership and focus.</p>
-                    </article>
+            <article class="feature-card">
+              <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                alt="Technology and innovation"
+                loading="lazy"
+              />
+              <div class="feature-card-content">
+                <h3>Technology</h3>
+                <p>Exploring digital innovations that improve efficiency, access, and opportunity.</p>
+              </div>
+            </article>
 
-                    <article class="timeline-item">
-                        <div class="timeline-year">2023</div>
-                        <h3>Expansion</h3>
-                        <p>Broadening strategic interests in investment, innovation, and future-ready ventures.</p>
-                    </article>
+            <article class="feature-card">
+              <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=900&q=80"
+                alt="Investment and finance"
+                loading="lazy"
+              />
+              <div class="feature-card-content">
+                <h3>Investment</h3>
+                <p>Evaluating strategic opportunities with focus on return, resilience, and long-term value.</p>
+              </div>
+            </article>
 
-                    <article class="timeline-item">
-                        <div class="timeline-year">2026</div>
-                        <h3>Legacy</h3>
-                        <p>Continuing to build sustainable value through leadership, creativity, and focus.</p>
-                    </article>
-                </div>
+            <article class="feature-card">
+              <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                alt="Growth and collaboration"
+                loading="lazy"
+              />
+              <div class="feature-card-content">
+                <h3>Growth</h3>
+                <p>Building momentum through innovation, partnerships, and sustainable development.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Impact metrics">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Impact</span>
+            <h2>Principled growth grounded in long-term thinking.</h2>
+          </div>
+
+          <div class="impact-grid">
+            <div class="impact-card">
+              <strong>90%</strong>
+              <span>Leadership</span>
             </div>
-        </section>
-
-        <section class="section" id="faq">
-            <div class="container">
-                <div class="section-heading" style="text-align: center; margin-inline: auto;">
-                    <span class="eyebrow">FAQ</span>
-                    <h2>Frequently asked questions.</h2>
-                </div>
-
-                <div class="faq-wrap">
-                    <div class="faq-item active">
-                        <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
-                            Who is Chol Magook Kur?
-                            <span aria-hidden="true">−</span>
-                        </button>
-                        <div class="faq-answer" id="faq-answer-1" role="region" aria-hidden="false">
-                            <p>Chol Magook Kur is a visionary statesman, tech innovator, entrepreneur, and founder of Chol and Sons Investment Company Limited focused on innovation, leadership, investment, and building meaningful projects for the future.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
-                            What is Chol and Sons Investment Company Limited?
-                            <span aria-hidden="true">+</span>
-                        </button>
-                        <div class="faq-answer" id="faq-answer-2" role="region" aria-hidden="true">
-                            <p>Chol and Sons Investment Company Limited is an investment-focused venture established to pursue business opportunities and create sustainable long-term value.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
-                            What areas does Chol focus on?
-                            <span aria-hidden="true">+</span>
-                        </button>
-                        <div class="faq-answer" id="faq-answer-3" role="region" aria-hidden="true">
-                            <p>The portfolio focuses on entrepreneurship, technology, innovation, investment, leadership, and future-oriented projects.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
-                            How can I get in touch?
-                            <span aria-hidden="true">+</span>
-                        </button>
-                        <div class="faq-answer" id="faq-answer-4" role="region" aria-hidden="true">
-                            <p>You can use the contact form below to send a message or connect through the social links provided in the footer.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="impact-card">
+              <strong>88%</strong>
+              <span>Entrepreneurship</span>
             </div>
-        </section>
-
-        <section class="section" id="contact">
-            <div class="container">
-                <div class="contact-layout">
-                    <aside class="contact-panel">
-                        <span class="eyebrow">Get in touch</span>
-                        <h3>Let’s connect and explore opportunities.</h3>
-                        <p>Whether you are seeking partnership, collaboration, or strategic conversation, I welcome meaningful engagements.</p>
-
-                        <ul class="contact-list">
-                            <li>
-                                <span class="dot" aria-hidden="true"></span>
-                                <span>Strategic partnerships and business opportunities</span>
-                            </li>
-                            <li>
-                                <span class="dot" aria-hidden="true"></span>
-                                <span>Innovation and technology-driven collaboration</span>
-                            </li>
-                            <li>
-                                <span class="dot" aria-hidden="true"></span>
-                                <span>Leadership, investment, and venture exploration</span>
-                            </li>
-                        </ul>
-                    </aside>
-
-                    <div class="contact-panel">
-                        <form class="contact-form" id="contactForm" novalidate>
-                            <div class="field">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" minlength="2" maxlength="80" autocomplete="name" required />
-                            </div>
-
-                            <div class="field">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="254" autocomplete="email" required />
-                            </div>
-
-                            <div class="field">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="6" placeholder="Write your message..." minlength="10" maxlength="2000" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn">Send Message</button>
-                            <p id="formMessage" role="status" aria-live="polite"></p>
-                        </form>
-                    </div>
-                </div>
+            <div class="impact-card">
+              <strong>82%</strong>
+              <span>Technology</span>
             </div>
-        </section>
+            <div class="impact-card">
+              <strong>86%</strong>
+              <span>Strategic Thinking</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ventures">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Ventures</span>
+            <h2>Building legacy through strategic opportunity and innovation.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div>
+                <span class="tag">Investment</span>
+                <h3>Chol and Sons Investment Company Limited</h3>
+              </div>
+              <p>A growing investment company focused on identifying opportunities and building sustainable value through disciplined entrepreneurship.</p>
+            </article>
+
+            <article class="project-card">
+              <div>
+                <span class="tag">Technology</span>
+                <h3>SMART Technology</h3>
+              </div>
+              <p>Exploring technology-driven solutions that connect people, improve efficiency, and create practical value for businesses and communities.</p>
+            </article>
+
+            <article class="project-card">
+              <div>
+                <span class="tag">Innovation</span>
+                <h3>CASICO Limited</h3>
+              </div>
+              <p>Developing ideas into practical projects through creativity, leadership, and strategic thinking.</p>
+            </article>
+
+            <article class="project-card">
+              <div>
+                <span class="tag">Future</span>
+                <h3>Future Investment</h3>
+              </div>
+              <p>Creating a strong foundation for sustainable, opportunity-driven growth in emerging markets.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Leadership journey">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Journey</span>
+            <h2>Progress shaped by vision, resilience, and execution.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-year">2019</div>
+              <h3>Vision</h3>
+              <p>Establishing a strategic foundation rooted in long-term potential and disciplined thinking.</p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-year">2021</div>
+              <h3>Execution</h3>
+              <p>Turning opportunities into action with practical leadership and a clear enterprise focus.</p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <h3>Expansion</h3>
+              <p>Broadening strategic interests across investment, innovation, and future-ready ventures.</p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-year">2026</div>
+              <h3>Legacy</h3>
+              <p>Continuing to build sustainable value through leadership, creativity, and focus.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-heading" style="text-align: center; margin-inline: auto;">
+            <span class="eyebrow">FAQ</span>
+            <h2>Frequently asked questions.</h2>
+          </div>
+
+          <div class="faq-wrap">
+            <div class="faq-item active">
+              <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
+                Who is Chol Magook Kur?
+                <span aria-hidden="true">−</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-1" role="region" aria-hidden="false">
+                <p>Chol Magook Kur is a visionary entrepreneur, business leader, and technology-focused executive focused on growth, innovation, and long-term strategic value.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+                What is Chol and Sons Investment Company Limited?
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-2" role="region" aria-hidden="true">
+                <p>It is an investment-focused venture established to pursue business opportunities and create sustainable long-term value through disciplined entrepreneurship.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+                What areas does Chol focus on?
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-3" role="region" aria-hidden="true">
+                <p>The work spans leadership, technology, innovation, investment, and future-oriented project development.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+                How can I get in touch?
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-4" role="region" aria-hidden="true">
+                <p>You can use the contact form below or connect via the social links in the footer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-layout">
+            <aside class="contact-panel">
+              <span class="eyebrow">Get in touch</span>
+              <h3>Let’s connect and explore opportunities.</h3>
+              <p>Whether you are seeking partnership, collaboration, or strategic conversation, meaningful engagement is always welcome.</p>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>Strategic partnerships and business opportunities</span>
+                </li>
+                <li>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>Innovation and technology-driven collaboration</span>
+                </li>
+                <li>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>Leadership, investment, and venture exploration</span>
+                </li>
+              </ul>
+            </aside>
+
+            <div class="contact-panel">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="field">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" minlength="2" maxlength="80" autocomplete="name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="254" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="6" placeholder="Write your message..." minlength="10" maxlength="2000" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formMessage" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-wrap">
-            <div>
-                <p>&copy; 2026 Chol Magook Kur. All Rights Reserved.</p>
-                <p>Visionary • Principled • Innovative</p>
-            </div>
-
-            <div class="footer-socials" aria-label="Social media links">
-                <a href="https://www.facebook.com/cholmagookkur" class="social-link" data-social="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://www.linkedin.com/" class="social-link" data-social="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://x.com/CholMagokKur" class="social-link" data-social="x" target="_blank" rel="noopener noreferrer">X / Twitter</a>
-                <a href="https://www.instagram.com/drakmas" class="social-link" data-social="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.youtube.com/@cholmagookkur5125" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
-            </div>
+      <div class="container footer-wrap">
+        <div>
+          <p>&copy; 2026 Chol Magook Kur. All Rights Reserved.</p>
+          <p>Visionary • Principled • Innovative</p>
         </div>
+
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://www.facebook.com/cholmagookkur" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/CholMagokKur" class="social-link" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          <a href="https://www.instagram.com/drakmas" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@cholmagookkur5125" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+      </div>
     </footer>
 
     <script>
-        const socialUrls = {
-            facebook: 'https://www.facebook.com/cholmagookkur',
-            linkedin: 'https://www.linkedin.com/in/your-profile',
-            x: 'https://x.com/CholMagokKur',
-            instagram: 'https://www.instagram.com/drakmas'
-        };
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        const themeToggle = document.getElementById('themeToggle');
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const initialDarkMode = savedTheme === 'dark' || (savedTheme === null && prefersDarkMode);
+      const applyTheme = (theme) => {
+        const isDark = theme === 'dark';
+        body.classList.toggle('dark-mode', isDark);
+        themeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+        themeToggle.setAttribute('aria-pressed', String(isDark));
+        themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      };
 
-        function updateThemeToggle() {
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            themeToggle.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
-            themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
-            themeToggle.setAttribute('aria-pressed', String(isDarkMode));
-        }
+      const initialTheme = savedTheme || (prefersDarkMode ? 'dark' : 'light');
+      applyTheme(initialTheme);
 
-        if (initialDarkMode) { document.body.classList.add('dark-mode'); }
-        updateThemeToggle();
+      themeToggle.addEventListener('click', () => {
+        const nextTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+        localStorage.setItem('theme', nextTheme);
+        applyTheme(nextTheme);
+      });
 
-        themeToggle.addEventListener('click', function () {
-            const isDarkMode = document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            updateThemeToggle();
+      const faqButtons = document.querySelectorAll('.faq-question');
+      faqButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const faqItem = button.closest('.faq-item');
+          const isOpen = faqItem.classList.contains('active');
+
+          faqButtons.forEach((itemButton) => {
+            const item = itemButton.closest('.faq-item');
+            item.classList.remove('active');
+            itemButton.setAttribute('aria-expanded', 'false');
+            itemButton.innerHTML = `${itemButton.textContent.trim()}<span aria-hidden="true">+</span>`;
+          });
+
+          if (!isOpen) {
+            faqItem.classList.add('active');
+            button.setAttribute('aria-expanded', 'true');
+            button.innerHTML = `${button.textContent.trim()}<span aria-hidden="true">−</span>`;
+          }
         });
+      });
 
-        const faqQuestions = document.querySelectorAll('.faq-question');
+      const contactForm = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
 
-        function setFaqState(question, isOpen) {
-            const item = question.parentElement;
-            const answerId = question.getAttribute('aria-controls');
-            const answer = document.getElementById(answerId);
-            const icon = question.querySelector('span');
+      contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
 
-            item.classList.toggle('active', isOpen);
-            question.setAttribute('aria-expanded', String(isOpen));
-            if (answer) answer.setAttribute('aria-hidden', String(!isOpen));
-            if (icon) icon.textContent = isOpen ? '−' : '+';
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+          formMessage.textContent = 'Please complete all fields before sending.';
+          formMessage.style.display = 'block';
+          formMessage.style.color = '#dc2626';
+          return;
         }
 
-        function closeAllFaqItems() {
-            faqQuestions.forEach((question) => setFaqState(question, false));
-        }
-
-        function toggleFaq(question) {
-            const isOpen = question.getAttribute('aria-expanded') === 'true';
-            closeAllFaqItems();
-            if (!isOpen) setFaqState(question, true);
-        }
-
-        faqQuestions.forEach((question) => {
-            question.addEventListener('click', () => toggleFaq(question));
-            question.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    toggleFaq(question);
-                }
-            });
-        });
-
-        const contactForm = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const messageInput = document.getElementById('message');
-
-        function showFormMessage(message, isError) {
-            formMessage.textContent = message;
-            formMessage.style.display = 'block';
-            formMessage.style.color = isError ? '#dc2626' : '#16a34a';
-        }
-
-        function validateContactForm() {
-            const name = nameInput.value.trim();
-            const email = emailInput.value.trim();
-            const message = messageInput.value.trim();
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            if (name.length < 2) {
-                showFormMessage('Please enter a name with at least 2 characters.', true);
-                nameInput.focus();
-                return false;
-            }
-            if (!emailPattern.test(email)) {
-                showFormMessage('Please enter a valid email address.', true);
-                emailInput.focus();
-                return false;
-            }
-            if (message.length < 10) {
-                showFormMessage('Please enter a message with at least 10 characters.', true);
-                messageInput.focus();
-                return false;
-            }
-            return true;
-        }
-
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            if (!validateContactForm()) return;
-            showFormMessage('Thank you! Your message has been prepared successfully.', false);
-            contactForm.reset();
-        });
-
-        [nameInput, emailInput, messageInput].forEach((input) => {
-            input.addEventListener('input', () => {
-                if (formMessage.style.display === 'block') formMessage.style.display = 'none';
-            });
-        });
-
-        document.querySelectorAll('[data-social]').forEach((link) => {
-            const socialName = link.getAttribute('data-social');
-            const configuredUrl = socialUrls[socialName];
-            if (configuredUrl && configuredUrl !== '#' && !configuredUrl.includes('your-profile')) {
-                link.href = configuredUrl;
-            }
-        });
+        formMessage.textContent = 'Thank you. Your message has been prepared successfully.';
+        formMessage.style.display = 'block';
+        formMessage.style.color = '#16a34a';
+        contactForm.reset();
+      });
     </script>
-</body>
+  </body>
 </html>
